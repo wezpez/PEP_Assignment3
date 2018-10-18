@@ -18,6 +18,7 @@ public:
     Node<T> * previous;
     Node<T>(const T& d):data(d), next(nullptr), previous(nullptr) {}
 
+
 };
 
 
@@ -65,8 +66,10 @@ public:
 
     }
 
+    Node<T> * getCurrent(){
+        return current;
+    }
 
-    
 };
 
 // do not edit below this line

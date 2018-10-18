@@ -25,18 +25,20 @@ int main() {
         } else {
             ++retval;
             cout << "1) Fail: pushing 3 then 4 onto the front of a list should give a list with 4 at the front, but it actually has " << aList.front() << " at the front\n";
-        }             
+        }
     }
     
     {
         
         // these tests need push_back, back and size
-        
+
         LinkedList<int> aList;
-    
+
         aList.push_back(3);
+
         aList.push_back(4);
-    
+
+
         if (aList.back() == 4) {
             cout << "2) Pass: pushing 3 then 4 onto the back of a list gives a list with 4 at the back\n";
         } else {
@@ -142,7 +144,7 @@ int main() {
         
         
         if (numbersOutShouldBe == numbersOut) {
-            cout << "6) Pass: pushing {2,4,6,8} onto the back of the list, reversing it, then looping over it, gets the values {8,6,4,2}\n";
+            cout << "6) Pass: pushing {2,4,6,8} onto the back of the list, reversing it, then looping over it, gets the values {8,6,4,2} \n";
         } else {
             ++retval;
             cout << "6) Fail: pushing {2,4,6,8} onto the back of the list, reversing it, then looping over it, gets the values: {";
@@ -153,8 +155,6 @@ int main() {
         }
     }
 
-    
-    
     return retval;
     
 }
