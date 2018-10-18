@@ -88,18 +88,43 @@ public:
     }
 
     void reverse(){
-        
+/*
+        NodeIterator<T> iterator = NodeIterator<T>(head);
 
-      /*  NodeIterator<T> iterator = NodeIterator<T>(head);
-        for (int i = 0; i < count - 1; i++){
-            Node<T> * temp = iterator.getCurrent() -> next;
-            iterator.getCurrent() -> next = iterator.getCurrent() -> previous;
-            iterator.getCurrent() -> previous = temp;
+
+
+        LinkedList<T> tempList = LinkedList<T>();
+        for (int i = 0; i < count; i++){
+            tempList.push_front(iterator.current -> data);
             ++iterator;
         }
+
+        head = tempList.head;
+        tail = tempList.tail;
+
+
+
+
+
+
+        for (int i = 1; i < count; i++){
+            Node<T> * temp = iterator.current -> next;
+            iterator.current -> next = iterator.current -> previous;
+            iterator.current -> previous = temp;
+
+            if (iterator.current != nullptr){
+                iterator.current = iterator.current -> previous;
+            }
+
+        }
+
+
+
         Node<T> * temp = head;
         head = tail;
-        tail = temp;*/
+        tail = temp;
+*/
+
     }
 
 };

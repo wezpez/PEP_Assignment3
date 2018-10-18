@@ -28,10 +28,10 @@ class NodeIterator {
   
 private:
     
-    Node<T> * current;
+
     
 public:
-    
+    Node<T> * current;
 
     NodeIterator(Node<T> * currentIn)
         : current(currentIn) {        
@@ -45,6 +45,7 @@ public:
     void operator++() {
         current = current -> next;
     }
+
 
     bool operator==(NodeIterator & rhs) {
         if (current == rhs.current){
