@@ -131,9 +131,9 @@ int main() {
         for (auto & n : numbersIn) {
             aList.push_back(n);
         }
-        
+
         aList.reverse();
-        
+
         vector<int> numbersOut;
         
         for (auto & n : aList) { // uses begin() and end() to loop over aList

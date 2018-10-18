@@ -74,12 +74,12 @@ public:
     }
 
     NodeIterator<T> end(){
-        NodeIterator<T> newIterator = NodeIterator<T>(nullptr);
+        NodeIterator<T> newIterator = NodeIterator<T>(tail -> next);
         return newIterator;
     }
 
     ~LinkedList(){
-        for (int i = 0; i < count; ++i){
+        for (int i = 0; i < count; i++){
             Node<T>* deleteNode = head;
             head = deleteNode -> next;
             delete deleteNode;
@@ -88,8 +88,10 @@ public:
     }
 
     void reverse(){
-        NodeIterator<T> iterator = NodeIterator<T>(head);
-        for (int i = 0; i < count; ++i){
+        
+
+      /*  NodeIterator<T> iterator = NodeIterator<T>(head);
+        for (int i = 0; i < count - 1; i++){
             Node<T> * temp = iterator.getCurrent() -> next;
             iterator.getCurrent() -> next = iterator.getCurrent() -> previous;
             iterator.getCurrent() -> previous = temp;
@@ -97,7 +99,7 @@ public:
         }
         Node<T> * temp = head;
         head = tail;
-        tail = temp;
+        tail = temp;*/
     }
 
 };
