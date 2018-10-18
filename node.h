@@ -8,10 +8,17 @@ using std::endl;
 
 // Do not add any #include statements here.  If you have a convincing need for adding a different `#include` please post in the forum on KEATS.
 
-// TODO your code for the Node class goes here:
-// (Note the 'NodeIterator' class will report lots of errors until Node exists
+template <class T>
+class Node {
 
+public:
 
+    T data;
+    Node<T> * next;
+    Node<T> * previous;
+    Node<T>(const T& d):data(d), next(nullptr), previous(nullptr) {}
+
+};
 
 
 
@@ -20,21 +27,45 @@ class NodeIterator {
   
 private:
     
-    Node<T>* current;
+    Node<T> * current;
     
 public:
     
 
-    NodeIterator(Node<T>* currentIn)
+    NodeIterator(Node<T> * currentIn)
         : current(currentIn) {        
     }
 
     T & operator*() {
-        return current->data;
+        return current -> data;
     }
 
-    // TODO: complete the code for NodeIterator here
-        
+
+    void operator++() {
+        current = current -> next;
+    }
+
+    bool operator==(NodeIterator & rhs) {
+        if (current == rhs.current){
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+
+    bool operator!=(NodeIterator & rhs) {
+        if (current != rhs.current){
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+
+
     
 };
 
