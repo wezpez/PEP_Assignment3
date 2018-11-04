@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/node.h" line="59" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/node.h" line="62" mnemonic="1" />
   </component>
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
-    <generated />
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="assignment20183_wezpez" targetName="assignment20183_wezpez" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -13,51 +15,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b4078c4-c265-4c8c-95b4-7316266e569a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/assignment20183-wezpez.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assignment20183-wezpez.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestList" beforeDir="false" afterPath="$PROJECT_DIR$/TestList" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestList.dSYM/Contents/Resources/DWARF/TestList" beforeDir="false" afterPath="$PROJECT_DIR$/TestList.dSYM/Contents/Resources/DWARF/TestList" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linkedlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/node.h" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="1949651075">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="3" />
+          <entry key="cpp" value="5" />
           <entry key="h" value="2" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="5" />
+          <entry key="ObjectiveC" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="267" />
-          <entry key="h" value="2414" />
+          <entry key="h" value="3422" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="2681" />
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="3689" />
         </counts>
       </usages-collector>
     </session>
@@ -67,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="267">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -76,9 +83,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linkedlist.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+            <state relative-caret-position="990">
+              <caret line="174" column="46" lean-forward="true" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
               <folding>
+                <element signature="e#43#60#0" expanded="true" />
                 <element signature="e#236#245#0" expanded="true" />
               </folding>
             </state>
@@ -86,15 +94,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestList.cpp">
+        <entry file="file://$PROJECT_DIR$/TestListD.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
+            <state relative-caret-position="-855" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reve</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,6 +123,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TestList.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/node.h" />
         <option value="$PROJECT_DIR$/linkedlist.h" />
       </list>
@@ -115,7 +136,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-338" />
+    <option name="x" value="55" />
     <option name="y" value="63" />
     <option name="width" value="1400" />
     <option name="height" value="987" />
@@ -125,18 +146,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="assignment20183-wezpez" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment20183_wezpez" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment20183-wezpez" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,6 +178,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.assignment20183_wezpez">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="assignment20183_wezpez" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment20183_wezpez" TARGET_NAME="assignment20183_wezpez" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment20183_wezpez" RUN_TARGET_NAME="assignment20183_wezpez">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.assignment20183_wezpez" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -169,31 +206,39 @@
       <updated>1539613742257</updated>
       <workItem from="1539613749884" duration="2194000" />
       <workItem from="1539866362909" duration="15480000" />
-      <workItem from="1539892384541" duration="6470000" />
+      <workItem from="1539892384541" duration="7034000" />
+      <workItem from="1540051650207" duration="253000" />
+      <workItem from="1540204732136" duration="1241000" />
+      <workItem from="1540312745308" duration="400000" />
+      <workItem from="1540475789806" duration="64000" />
+      <workItem from="1541268645365" duration="7000" />
+      <workItem from="1541268684634" duration="13566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24144000" />
+    <option name="totallyTimeSpent" value="40239000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="63" width="1400" height="987" extended-state="0" />
+    <frame x="55" y="63" width="1400" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2569956" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2790869" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32960895" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22011173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24581006" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -211,30 +256,38 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestListD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1034" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestList.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
+        <state relative-caret-position="46">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="267">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestListD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/linkedlist.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+        <state relative-caret-position="990">
+          <caret line="174" column="46" lean-forward="true" selection-start-line="174" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
           <folding>
+            <element signature="e#43#60#0" expanded="true" />
             <element signature="e#236#245#0" expanded="true" />
           </folding>
         </state>

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/patrickwhyte/Documents/GitHub/assignment20183-wezpez/TestListD.cpp
+linkedlist.h
+/Users/patrickwhyte/Documents/GitHub/assignment20183-wezpez/linkedlist.h
+iostream
+-
+vector
+-
+
+/Users/patrickwhyte/Documents/GitHub/assignment20183-wezpez/linkedlist.h
+node.h
+/Users/patrickwhyte/Documents/GitHub/assignment20183-wezpez/node.h
+utility
+-
+initializer_list
+-
+
+/Users/patrickwhyte/Documents/GitHub/assignment20183-wezpez/node.h
+iostream
+-
+

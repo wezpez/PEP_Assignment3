@@ -25,13 +25,12 @@ public:
 
 template<typename T>
 class NodeIterator {
-  
-private:
-    
 
+private:
+    Node<T> * current;
     
 public:
-    Node<T> * current;
+
 
     NodeIterator(Node<T> * currentIn)
         : current(currentIn) {        
@@ -44,6 +43,10 @@ public:
 
     void operator++() {
         current = current -> next;
+    }
+
+    void operator--() {
+        current = current -> previous;
     }
 
 

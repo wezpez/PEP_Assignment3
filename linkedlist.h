@@ -4,6 +4,7 @@
 #include "node.h"
 
 #include <utility>
+#include <initializer_list>
 
 // Do not add any #include statements here.  If you have a convincing need for adding a different `#include` please post in the forum on KEATS.
 
@@ -18,9 +19,19 @@ private:
 public:
 
     LinkedList<T>()
-            :head(nullptr), tail(nullptr), count(0) {
+            : head(nullptr), tail(nullptr), count(0) {}
 
-    }
+
+    LinkedList<T>(std::initializer_list<T> list)
+            : head(nullptr), tail(nullptr), count(0)
+            {
+                for(auto & l : list)
+                {
+                    push_back(l);
+                }
+            }
+
+
 
     void push_front(T nHead){
 
@@ -88,10 +99,8 @@ public:
     }
 
     void reverse(){
-/*
+
         NodeIterator<T> iterator = NodeIterator<T>(head);
-
-
 
         LinkedList<T> tempList = LinkedList<T>();
         for (int i = 0; i < count; i++){
@@ -102,30 +111,73 @@ public:
         head = tempList.head;
         tail = tempList.tail;
 
+    }
 
+    //inserting a new node into the linked list
+    NodeIterator<T> insert(NodeIterator<T> insertPosition, T insertNode){
 
+        count++;
 
+        Node<T> * newNode = new Node<T>(insertNode);
 
+        newNode->next = insertPosition.getCurrent();
+        newNode->previous = insertPosition.getCurrent()->previous;
 
-        for (int i = 1; i < count; i++){
-            Node<T> * temp = iterator.current -> next;
-            iterator.current -> next = iterator.current -> previous;
-            iterator.current -> previous = temp;
+        insertPosition.getCurrent()->previous = newNode;
 
-            if (iterator.current != nullptr){
-                iterator.current = iterator.current -> previous;
-            }
-
+        if (insertPosition.getCurrent() == head){
+            head = newNode;
+            --insertPosition;
+            return insertPosition;
         }
 
+        --insertPosition;
+        --insertPosition;
 
+        insertPosition.getCurrent()->next = newNode;
 
-        Node<T> * temp = head;
-        head = tail;
-        tail = temp;
-*/
+        ++insertPosition;
 
+        return insertPosition;
     }
+
+    NodeIterator<T> erase(NodeIterator<T> erasePosition){
+
+        count--;
+
+        if (erasePosition.getCurrent() == head){
+            Node<T>* deleteNode = erasePosition.getCurrent();
+
+            ++erasePosition;
+            erasePosition.getCurrent()->previous = nullptr;
+            head = erasePosition.getCurrent();
+
+            delete deleteNode;
+            return erasePosition;
+        }
+        else if (erasePosition.getCurrent() == tail){
+            Node<T>* deleteNode = erasePosition.getCurrent();
+
+            --erasePosition;
+            erasePosition.getCurrent()->next = nullptr;
+            tail = erasePosition.getCurrent();
+
+            delete deleteNode;
+            return erasePosition;
+        }
+        else {
+            NodeIterator<T> tempPosition = NodeIterator<T>(erasePosition.getCurrent()->previous);
+
+            tempPosition.getCurrent()->next = erasePosition.getCurrent()->next;
+            ++tempPosition;
+            tempPosition.getCurrent()->previous = erasePosition.getCurrent()->previous;
+
+            delete erasePosition.getCurrent();
+            return tempPosition;
+
+        }
+    }
+
 
 };
 
